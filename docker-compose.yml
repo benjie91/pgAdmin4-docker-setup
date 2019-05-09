@@ -1,0 +1,10 @@
+version: '3'
+services:
+  postgres:
+    image: dpage/pgadmin4
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: user@domain.com
+      PGADMIN_DEFAULT_PASSWORD: password
